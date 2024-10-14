@@ -43,12 +43,12 @@ def game_o():
         symb_idv = int(input(f"{player_2.capitalize()}, введите порядковый номер ячейки по вертикали: "))
     except ValueError:
         print("Неккоректные координаты")
-        game_x()
+        game_o()
     try:
         symb_idh = int(input(f"{player_2.capitalize()}, введите порядковый номер ячейки по горизонтали: "))
     except ValueError:
         print("Неккоректные координаты")
-        game_x()
+        game_o()
     if ((str(symb_idv) + str(symb_idh)) not in used_cells) and ((0 < symb_idv < 4) and (0 < symb_idh < 4)):
         if symb_idv == 1:
             bar_1[symb_idh - 1] = f"[{symbol_o}]"
